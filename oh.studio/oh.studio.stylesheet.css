@@ -1,0 +1,381 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(1);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+nav{
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    font-family: sans-serif;
+    background-color: #e8e5e480;
+    border-radius: 40px;
+    width: fit-content;
+    margin: 30px auto;
+    z-index: -1;
+}
+
+nav li{
+    position: relative;
+    font-size: 12px;
+    display: inline-block;
+    right: 19px;
+    margin: -10px -10px -10px -15px; 
+    padding: 0 35px 0 35px;
+}
+
+nav li:hover{
+    background-color: #594848;
+    border-radius: 40px;
+}
+
+.maintext1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 33px;
+    animation: fade-up 1s;
+}
+
+.maintext2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -90px;
+    font-family: sans-serif;
+    font-size: 33px;
+    animation: fade-up 1s;
+}
+
+.maintext3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -90px;
+    font-family: sans-serif;
+    font-size: 33px;
+    animation: fade-up 1s;
+}
+
+.skills{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    width: 31%;
+    margin: -10px auto;
+    animation: fade-up 1s;
+}
+
+.skillsbackground0{
+    padding: 10px 10px;
+}
+
+.skillsbackground{
+    border-radius: 40px;
+    background-color: #e8e5e480;
+    padding: 10px 10px;
+}
+
+.mainbackground1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 550svh;
+    /*background-color: blue;*/
+    margin: 60px 35px;
+    animation: fade-up 1s;
+}
+
+.row1{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    /*background-color: none;*/
+}
+
+.image1Container{
+    height: 100%;
+    max-width: 49.15%;
+}
+
+.image1{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    filter: blur(0px);
+}
+
+.image1:hover{
+    transition: 1s;
+    filter: blur(12px);
+}
+
+.image2Container{
+    height: 100%;
+    max-width: 49.15%;
+}
+
+.image2{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.row2{
+    position: absolute;
+    top: 16.5%;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    /*background-color: red;*/
+}
+
+.image3Container{
+    height: 100%;
+    max-width: 49.15%;
+}
+
+.image3{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.image4Container{
+    height: 100%;
+    max-width: 49.15%;
+}
+
+.image4{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.row3{
+    position: absolute;
+    top: 33%;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    /*background-color: green;*/
+}
+
+.image5Container{
+    height: 100%;
+    max-width: 49.15%;
+}
+
+.video1{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.image6Container{
+    height: 100%;
+    max-width: 49.15%;
+}
+
+.image6{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.row4{
+    position: absolute;
+    top: 49.5%;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    /*background-color: orange;*/
+}
+
+.image7Container{
+    height: 100%;
+    max-width: 49.15%;
+}
+
+.image7{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.image8Container{
+    height: 100%;
+    max-width: 49.15%;
+}
+
+.video2{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.row5{
+    position: absolute;
+    top: 66%;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    /*background-color: purple;*/
+}
+
+.image9Container{
+    height: 100%;
+    max-width: 49.15%;
+}
+
+.image9{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.image10Container{
+    height: 100%;
+    max-width: 49.15%;
+}
+
+.image10{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.row6{
+    position: absolute;
+    top: 82.5%;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    /*background-color: pink;*/
+}
+
+.image11Container{
+    height: 100%;
+    max-width: 49.15%;
+}
+
+.image11{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.image12Container{
+    height: 100%;
+    max-width: 49.15%;
+}
+
+.video3{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.workTogether{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -1%;
+    font-family: sans-serif;
+    font-weight: 540;
+    font-size: 35px;
+    /*background-color: aqua;*/
+}
+
+.getInTouch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -4.5%;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    /*background-color: teal;*/
+}
+
+.getInTouch a{
+    text-decoration: none;
+    color: hsl(0, 0%, 59%);
+}
+
+.getInTouch a:hover{
+    color: hsl(0, 0%, 74%);
+}
+
+.footer{
+    position: relative;
+    margin: auto;
+    height: 12svh;
+    display: flex;
+    /*background-color: black;*/
+}
+
+.oilHarris{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    font-family: sans-serif;
+}
+
+.socials{
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    padding: 0px 15px 0px 45px;
+    font-family: sans-serif;
+}
+
+.socials a{
+    text-decoration: none;
+    color: black;
+}
+
+.socials a:hover{
+    color: hsl(0, 0%, 74%);
+}

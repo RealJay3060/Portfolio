@@ -1,0 +1,815 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*.autoshow{
+    animation: autoshowanimation both;
+    animation-timeline: view(70% 5%);
+}
+
+@keyframes autoshowanimation{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}*/
+
+.mainbackground{ /*Note: done wrong, should be a flex box for better organizing*/
+    position: relative;
+    background: black;
+    background-image: url(images/mainimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85svh;
+}
+
+nav{/*height of nav is wrong*/
+    background: none;
+    max-width: 100%;
+    height: 80svh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    font-family: sans-serif;
+    z-index: 1;
+}
+
+nav li{
+    display: inline-block;
+    font-size: 16px;
+    padding: 0px 40px 0px 0px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: white;
+}
+
+.maincontainer{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 75svh;
+    background: none;
+    margin: -550px auto; 
+}
+
+.herotext{
+    position: absolute;
+    background: none;
+    width: 40%;
+    height: 60svh;
+    margin-left: 4%;
+    margin-top: 6%;
+}
+
+.herotext h1{
+    font-family: sans-serif;
+    color: white;
+    font-size: 60px;
+    margin-top: -1%;
+}
+
+.herotext p{
+    font-family: sans-serif;
+    color: white;
+    font-size: 15px;
+    margin-top: -20px;
+}
+
+.book{
+    position: relative;
+    background: white;
+    margin-top: 40px;
+    width: 100px;
+    height: 40px;
+    border-radius: 40px;
+    z-index: 2;
+}
+
+.book p{
+    color: black;
+    padding: 10px 0px 0px 34%;
+}
+
+.book p a{
+    text-decoration: none;
+    color: black;
+}
+
+.dronebackground{
+    position: absolute;
+    background: none;
+    height: 100%;
+    width: 60%;
+    margin-left: 40%;
+    z-index: 0;
+}
+
+.dronebackground img{
+    width: 100%;
+    height: 100%;
+}
+
+.displaybar{
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    background: none;
+    height: 17svh;
+    width: 80%;
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+    border: 2px solid rgba(255, 255 255, 0.18);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin: 30.75% 10% 0% 10%;
+}
+
+.bar1{
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 10px;
+    width: 33.33%;
+}
+
+.bar1 h1{
+    font-family: sans-serif;
+    color: white;
+    font-size: 40px;
+}   
+
+.bar2{
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 10px;
+    width: 33.33%;
+}
+
+.bar2 h1{
+    font-family: sans-serif;
+    color: white;
+    font-size: 40px;
+}
+
+.bar3{
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 10px;
+    width: 33.33%;
+}
+
+.bar3 h1{
+    font-family: sans-serif;
+    color: white;
+    font-size: 40px;
+}
+
+.packagesbackground1{
+    position: relative;
+    background: black;
+    height: 100svh;
+}
+
+.packagestittle{
+    position: absolute;
+    left: 50%;
+    top: 14%;
+    translate: -50% 0%;
+    font-family: sans-serif;
+    color: white;
+    font-size: 28px;
+}
+
+.packagedisplay{
+    position: absolute;
+    top: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    background: none;
+    height: 40svh;
+    width: 100%;
+}
+
+.packages{
+    background: red;
+    height: 100%;
+    width: 25%;
+}
+
+.packages img{
+    height: 100%;
+    width: 100%;
+}
+
+.packages video{
+    height: 100%;
+    width: 100%;
+}
+
+.clip{
+    object-fit: cover;
+}
+
+.wedding{
+    object-fit: cover;
+}
+
+.packagesdetailsbackground{
+    position: relative;
+    background: none;
+    height: 50svh;
+    width: 100%;
+}
+
+.packagesdetailsrow{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    background: none;
+    height: 40svh;
+    width: 100%;
+}
+
+.packagesdetails{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    height: 100%;
+    width: 25%;
+    box-shadow: 0px 20px 20px 20px rgb(227, 225, 225);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.packagesdetails h1{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.packagesdetails p{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.learnmore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F6EDD9;
+    height: 5svh;
+    width: 40%;
+    margin: 10px 28% 0px 28%;
+}
+
+.teambackground{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    background: none;
+    height: 300svh;  
+    width: 100%;
+}
+
+.team{
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    translate: -50% 0%;
+}
+
+.team h1{
+    font-family: sans-serif;
+    font-size: 70px;
+}
+
+.member1{
+    position: absolute;
+    top: 15%;
+    background: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15%;
+    height: 40svh;
+    width: 90%;
+    margin: 0 5% 0 5%;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px 5px rgb(227, 225, 225);
+}
+
+.imagebox{
+    border-radius: 5px;
+    height: 35svh;
+    width: 20%;
+    background: none;
+}
+
+.imageforteam{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.imagebox img{
+    object-fit: cover;
+}
+
+.memberdetail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35svh;
+    background: none;
+    border-radius: 5px;
+    width: 30%;
+    font-family: sans-serif;
+}
+
+.member2{
+    position: absolute;
+    top: 30%;
+    background: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15%;
+    height: 40svh;
+    width: 90%;
+    margin: 0 5% 0 5%;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px 5px rgb(227, 225, 225);
+}
+
+.member3{
+    position: absolute;
+    top: 45%;
+    background: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15%;
+    height: 40svh;
+    width: 90%;
+    margin: 0 5% 0 5%;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px 5px rgb(227, 225, 225);
+}
+
+.member4{
+    position: absolute;
+    top: 60%;
+    background: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15%;
+    height: 40svh;
+    width: 90%;
+    margin: 0 5% 0 5%;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px 5px rgb(227, 225, 225);
+}
+
+.member5{
+    position: absolute;
+    top: 75%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15%;
+    height: 40svh;
+    width: 90%;
+    margin: 0 5% 0 5%;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px 5px rgb(227, 225, 225);
+}
+
+.footer{
+    background-color: black;
+    height: 50svh;
+}
+
+.footer-conatiner{
+    display: flex;
+}
+
+.help-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 5%;
+    height: 40svh;
+    width: 15svw;
+}
+
+.help-list li{
+    list-style: none;
+    padding-right: 40px;
+    padding-bottom: 15px;
+}
+
+.help-list a{
+    text-decoration: none;
+    color: white;
+}
+
+.follow-us{
+    display: flex;
+    justify-content: space-around;
+    width: 30svw;
+    position: absolute;
+    margin-left: 60%;
+    margin-top: 20px;
+}
+
+.terms{
+    display: flex;
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 18.5%;
+    width: 40svw;
+}
+
+.terms li{
+    display: inline-block;
+    padding: 0px 20px;
+    list-style: none;
+}
+
+.terms a{
+    text-decoration: none;
+    color: white;
+}
+
+/*About US*/
+
+.navaboutus{
+    background: none;
+    max-width: 100%;
+    height: 10svh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    font-family: sans-serif;
+    z-index: 1;
+}
+
+.navaboutus li{
+    display: inline-block;
+    font-size: 16px;
+    padding: 0px 40px 0px 0px;
+}
+
+.navaboutus li a{
+    text-decoration: none;
+    color: white;
+}
+
+.aboutusbackground{ 
+    position: relative;
+    background: black;
+    background-image: url(images/aboutusbackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85svh;
+}
+
+.aboutus{
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 38px;
+    color: white;
+    top: 40%;
+    left: 50%;
+    translate: -60% -20%;
+}
+
+.aboutuscontainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    width: 100%;
+    height: 80svh;
+    font-family: sans-serif;
+}
+
+.aboutusdetails h1{
+    padding-left: 42%;
+    font-size: 28px;
+}
+
+.aboutusdetails p{
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.missioncontainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    background: black;
+    height: 80svh;
+    width: 100%;
+}
+
+.missionimagecontainer{
+    background: none;
+    height: 60svh;
+    width: 50%;
+    border-radius: 5px;
+    padding-left: 3%;
+}
+
+.ourmissionimg{
+    height: 100%;
+    width: 70%;
+    border-radius: 5px;
+}
+
+.missiondetails{
+    height: 60svh;
+    width: 50%;
+    background: none;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 3%;
+}
+
+.missiondetails h1{
+    font-size: 28px;
+}
+
+.missiondetails p{
+    font-size: 18px;
+}
+
+.whattoexpectcontainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    background: none;
+    height: 80svh;
+    width: 100%;
+}
+
+.whattoexpectdetails{
+    height: 60svh;
+    width: 50%;
+    background: none;
+    color: black;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 3%;
+}
+
+.whattoexpectdetails h1{
+    font-size: 28px;
+}
+
+.whattoexpectdetails p{
+    font-size: 18px;
+}
+
+.whattoexpectimgcontainer{
+    background: none;
+    height: 60svh;
+    width: 50%;
+    border-radius: 5px;
+    padding-left: 9%;
+}
+
+.whattoexpectimg{
+    height: 100%;
+    width: 85%;
+    border-radius: 5px;
+}
+
+/*Book*/
+
+.bookbackground{ 
+    position: relative;
+    background: black;
+    background-image: url(images/product.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100svh;
+    margin-bottom: -8.5px;
+}
+
+.navbook{
+    background: none;
+    max-width: 100%;
+    height: 10svh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    font-family: sans-serif;
+    z-index: 1;
+}
+
+.navbook li{
+    display: inline-block;
+    font-size: 16px;
+    padding: 0px 40px 0px 0px;
+}
+
+.navbook li a{
+    text-decoration: none;
+    color: white;
+}
+
+.booktittle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80svh;
+    background: none;
+}
+
+.bookwrapper{
+    width: 420px;
+    height: 80svh;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.bookwrapper h1{
+    font-family: sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+
+.bookwrapper .input-box{
+    width: 100%;
+    height: 50px;
+    background: none;
+    margin:30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: orange;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255 255, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: white;
+}
+
+.bookwrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+}
+
+/*Packages*/
+
+.navpackages{
+    background: black;
+    max-width: 100%;
+    height: 10svh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    font-family: sans-serif;
+    z-index: 1;
+}
+
+.navpackages li{
+    display: inline-block;
+    font-size: 16px;
+    padding: 0px 40px 0px 0px;
+}
+
+.navpackages li a{
+    text-decoration: none;
+    color: white;
+}
+
+.packagerow1{
+    position: relative;
+    height: 60svh;
+    background: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.packagebkg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background: none;
+    height: 60svh;
+    border-radius: 5px;
+    gap: 55px;
+}
+
+.packageimg{
+    height: 90%;
+    width: 50%;
+}
+.packageimg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.basketball{
+    object-fit: cover;
+}
+
+.packageinfo{
+    font-family: sans-serif;
+}
+
+.packageinfo h1{
+    font-size: 38px;
+}
+
+.packageinfo li{
+    font-size: 18px;
+}
+
+.packagebook{
+    position: relative;
+    background: black;
+    margin-top: 40px;
+    width: 100px;
+    height: 40px;
+    border-radius: 40px;
+}
+
+.packagebook p{
+    color: white;
+    padding: 10px 0px 0px 34%;
+}
+
+.packagebook p a{
+    text-decoration: none;
+    color: white;
+}

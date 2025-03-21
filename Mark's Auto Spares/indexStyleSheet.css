@@ -1,0 +1,415 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 3000px) {
+
+/*NAVIGATION*/
+
+.navContainer{
+    position: sticky;
+    font-family: sans-serif, Arial, Helvetica;
+    top: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 13svh;
+    z-index: 9999;
+    border-bottom: 10px;
+    box-shadow: 0px 0px 10px rgba(227, 228, 237, 0.37);
+}
+
+.logo{
+    position: absolute;
+    left: 0;
+    padding-left: 15%;
+}
+
+nav{
+    position: absolute;
+    right: 0;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav li{
+    display: inline-block;
+    color: grey;
+    padding: 0 7px 0 7px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: black;
+}
+ 
+/* END OF NAVIGATION */
+
+/* MAIN AREA */
+
+    .mainArea{
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        margin: auto;
+        height: 80svh;
+        width: 97%;
+        background-color: red;
+        margin-top: 55px;
+    }
+    
+    /* LEFT SIDE DISPLAY*/ 
+    
+    .leftDisplay{
+        position: absolute;
+        font-family: sans-serif, Arial, Helvetica;
+        background-color: blue;
+        height: 100%;
+        width: 50%;
+        padding-right: 10px;
+    }
+    
+    .leftDisplay img{
+        width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        flex-grow: 1;
+    }
+    
+    .leftDisplayText{
+        position: absolute;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        background-color: none;
+        justify-content: center;
+        align-items: center;
+        top: 0%;
+        padding-right: 10px;
+        color: white;
+    }
+    
+    .leftDisplayText button{
+        border-radius: 40px;
+        padding: 5px 15px 5px 15px;
+        box-shadow: 0px 0px 10px rgba(227, 228, 237, 0.37);
+    }
+    
+    /* END OF LEFT SIDE DISPLAY */
+    
+    /* START OF TOP RIGHT DISPLAY */
+    
+    .rightDisplay{
+        position: absolute;
+        left: 50%;
+        display: flex;
+        height: 100%;
+        width: 50%;
+        overflow: hidden;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .topDisplay{
+        width: 100%;
+        height: 40%;
+        margin-top: 10%;
+        background-color: pink;
+        flex-grow: 1;
+        margin: 0px 0px 5px;
+    }
+    
+    .topDisplay img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        flex-grow: 1;
+        transition: transform 0.5s ease;
+    }
+    
+    .topDisplayText{
+        text-align: center;
+    
+        color: white;
+    }
+    
+    .topDisplay img :hover{
+        transform: scale(0.8);
+    }
+    
+    .bottomDisplay{
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 47%;
+        background-color: cyan;
+    }
+    
+    .bottomDisplay1{
+        width: 47%;
+        height: 100%;
+        background-color: black;
+    }
+    
+    .bottomDisplay2{
+        width: 47%;
+        height: 100%;
+        background-color: rgb(47, 236, 192);
+    }
+
+    /* END OF MAIN AREA */
+
+    /* START OF LATEST SECTION */
+
+    /* TOYOTA */ 
+
+    /* TOYOTA BANNER */ 
+
+    .toyotaBanner{
+        position: relative;
+        font-family: sans-serif, Arial, Helvetica;
+        display: flex;
+        flex-direction: column;
+        height: 13vh;
+        width: 80%;
+        margin: 10vh auto;
+        background-color: none;
+    }
+
+    .toyotaBanner p3{
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    .toyotaTittleContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        height: 70%;
+        background-color: none;
+    }
+
+    .toyotaLogoContainer{
+        height: 100%;
+        width: 10%;
+        background-color: none;
+        flex-grow: 0;
+    }
+
+    .toyotaLogoContainer img{
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    .toyotaTittleContainer h3{
+        flex-grow: 1;
+        font-size: 40px;
+        padding-left: 10px;
+    }
+
+    /* END OF TOYOTA BANNER */ 
+
+    /* START OF DISPLAYS SECTIONS*/
+
+    .toyotaDisplay{
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
+        height: 70vh;
+        width: 80%;
+        margin: 10vh auto;
+        background-color: none;
+    }
+
+    .productColumn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 31%;
+        background-color: none;
+    }
+
+    .imageContainer{
+        width: 100%;
+        height: 55vh;
+        max-height: 55vh;
+        margin-bottom: auto;
+        background-color: none;
+    }
+
+    .productColumn img{
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    .textBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        height: 20vh;
+        width: 100%;
+        background-color: none;
+    }
+
+    .textBox h2{
+        font-size: 28px;
+    }
+
+    .textBox p2{
+        font-size: 18px;
+    }
+
+    .textBox h2 p2{
+        text-align: left;
+        font-family: sans-serif;
+    }
+
+    /* END OF DISPLAY SECTIONSB */ 
+
+    /* START OF FOOTER */ 
+
+    /*
+    footer{
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 30vh;
+        background-color: rgb(15, 153, 246);
+    }*/
+
+    footer {
+        margin-top: 60px;
+        padding: 60px 0px 30px 0px;
+        background-color: rgb(16, 104, 235);
+        /*background-color: #2a2a2a;*/
+      }
+      
+      footer .logo {
+        margin-bottom: 20px;
+      }
+      
+      footer ul li {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      footer ul li a {
+        font-size: 14px;
+        color: #fff;
+        transition: all .3s;
+      }
+      
+      footer ul li a:hover {
+        color: #aaa;
+      }
+      
+      footer h4 {
+        letter-spacing: 0.5px;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      
+      footer .under-footer {
+        margin-top: 30px;
+        padding-top: 30px;
+        text-align: center;
+        border-top: 1px solid rgba(250,250,250,0.3);
+      }
+      
+      footer .under-footer ul {
+        margin-top: 20px;
+      }
+      
+      footer .under-footer ul li {
+        display: inline-block;
+        margin: 0px 10px;
+      }
+      
+      footer .under-footer ul li a {
+        font-size: 22px;
+      }
+      
+      footer .under-footer p {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 300;
+      }
+      
+      footer .under-footer a {
+        color: #cff;
+      }
+      
+      footer .under-footer a:hover {
+        color: #c66;
+      }
+      
+
+    /* END OF FOOTER */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}   
+
+
