@@ -1,0 +1,1 @@
+This is a software created for Billboard's Number 1 Songs and its GUI is ran using Opensue Linux. A skeleton code was provided by my lecturer to assist, which I then used to call my ADTs, create wxwidgets for the menu, called certain parts of the ADTs to enque, deque, delete, sort and etc certain songs from a file which is encrypted. 
